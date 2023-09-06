@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAINLESS WEBSITE</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/ffbeea3352.js" crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="header-container">
+                <div class="image">
+                    <img src="./img/pcalogo.png">
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Service">Service</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-social">
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/message/EDSOI5ICZRGDB1"><i class="fab fa-whatsapp"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+                <button id="close-menu-btn"><i class="fas fa-xmark"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="title" id="Home">
+        <div class="container title-container">
+
+            <div class="title-left">
+                <h4>Hello There I’m</h4>
+                <h1>Mojeed Shittu</h1>
+                <p>Highly skilled Frontend Developer with expertise in HTML, CSS and JavaScript, and a solid foundation in React. </p>
+                <a href="https://wa.me/message/EDSOI5ICZRGDB1" class="btn" target="_blank">Get in touch</a>
+            </div>
+
+            <div class="title-right">
+                <div class="circle"></div>
+                <img src="./img/codehand.png">
+                
+            </div>
+
+            
+        </div>
+    </section>
+
+
+
+
+
+
+    <script>
+        let openBtn = document.querySelector ('#open-menu-btn');
+        let closeBtn = document.querySelector ('#close-menu-btn');
+        let navMenu = document.querySelector ('nav')
+
+        openBtn.addEventListener ('click', ()=> {
+            navMenu.style.display = 'block'
+            openBtn.style.display = 'none'
+            closeBtn.style.display = 'inline-block'
+        })
+
+        closeBtn.addEventListener ('click', ()=> {
+            navMenu.style.display = 'none'
+            openBtn.style.display = 'inline-block'
+            closeBtn.style.display = 'none'
+        })
+    </script>
+</body>
+</html>
